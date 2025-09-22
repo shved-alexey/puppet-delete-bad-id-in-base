@@ -1,8 +1,8 @@
 # Foreman (puppet) delete bad host in base <br>
- <br>
+
 # We display a list of hosts from ID <br>
 sudo -u postgres psql foreman -c 'select id, name, type, organization_id, location_id from hosts;' <br>
- <br>
+
 # We try to remove in Foreman-Rake Console <br>
 foreman-rake console <br>
 Host::Base.where(id: [XXX]).destroy_all <br>
