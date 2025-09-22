@@ -7,7 +7,7 @@ sudo -u postgres psql foreman -c 'select id, name, type, organization_id, locati
 foreman-rake console <br>
 Host::Base.where(id: [XXX]).destroy_all <br>
   or <br>
-Host.where(id: [233, 265, 274]).destroy_all <br>
+Host.where(id: [XXX, YYY, ZZZ]).destroy_all <br>
 
 # If an error, then we remove directly from the base
 sudo -u postgres psql foreman -c "DELETE FROM host_puppet_facets WHERE host_id = XXX;" <br>
